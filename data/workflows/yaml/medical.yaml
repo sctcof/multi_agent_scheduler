@@ -1,0 +1,15 @@
+edges:
+- condition: always
+  source: nurse
+  target: doctor
+nodes:
+- agent_type: react
+  config:
+    role: intake nurse
+  id: nurse
+- agent_type: long_cot
+  config:
+    role: diagnostician
+  id: doctor
+start_node: nurse
+workflow: medical_intake
